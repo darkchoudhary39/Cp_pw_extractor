@@ -874,7 +874,7 @@ async def process_cpwp(bot: Client, m: Message, user_id: int):
                                 for cnt, course in enumerate(courses):
                                     name = course['name']
                                     price = course['finalPrice']
-                                    text += f'{cnt + 1}. ```\n{name} 💵₹{price}```\n'
+                                    text += f'{cnt + 1}. ```\n{name} 💵💲₹{price}```\n'
 
                                 await editable.edit(f"**Send index number of the Category Name\n\n{text}\nIf Your Batch Not Listed Then Enter Your Batch Name**")
                             
@@ -914,7 +914,7 @@ async def process_cpwp(bot: Client, m: Message, user_id: int):
                                                 for cnt, course in enumerate(courses):
                                                     name = course['name']
                                                     price = course['finalPrice']
-                                                    text += f'{cnt + 1}. ```\n{name} 💵₹{price}```\n'
+                                                    text += f'{cnt + 1}. ```\n{name} 💵💲₹{price}```\n'
                                                 await editable.edit(f"**Send index number of the Batch to download.\n\n{text}**")
                                             
                                                 try:
